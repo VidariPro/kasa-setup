@@ -8,8 +8,8 @@ device = kasa. SmartDevice("192.168.0.1")
 
 asyncio.run(device.update())
 
-alias = asyncio.run(device.alias)
+currentAlias = asyncio.run(device.alias)
 
-print("The devices current alias is: " + alias)
+print("The devices current alias is: " + currentAlias)
 print("")
 print("Please run alias-setup.py to change the device's alias.")
